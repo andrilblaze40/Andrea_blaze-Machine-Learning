@@ -77,8 +77,8 @@ with st.expander('Input features'):
 # Data preparation
 # Encode y		
   #target_mapper = {'B': 0,
-                 'M': 1,
-                 }
+                 #'M': 1,
+                 #}
   #def target_encode(val):
   #return target_mapper[val]
 
