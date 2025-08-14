@@ -193,7 +193,7 @@ with st.expander('Accuracy Scores'):
 # Generate confusion matrix
   ConfusionMatrixDisplay.from_estimator(model, X_test, y_test);
   #st.title("Confusion Matrix Display of Model Performance on Test set") 
-  st.pyplot(fig)
+  
 
 
   
