@@ -10,6 +10,7 @@ from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from sklearn.model_selection import GridSearchCV, cross_val_score, train_test_split
 from sklearn.pipeline import make_pipeline
 import seaborn as sns
+from sklearn.metrics import classification_report
 from imblearn.over_sampling import RandomOverSampler
 
 
@@ -187,6 +188,14 @@ with st.expander('Accuracy Scores'):
   acc_train
   st.write('**Test Accuracy**')
   acc_test
+
+# Generate a classification report for your model's performance on the test data and assign it to `class_report`.
+  class_report = classification_report(y_test, model.predict(X_test))
+  class_report
+with st.expander('Classification Report'):
+  st.write('**Class_Report**')
+  class_report
+
 
 
   
