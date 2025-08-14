@@ -189,12 +189,13 @@ with st.expander('Accuracy Scores'):
   st.write('**Test Accuracy**')
   acc_test
 
- 
-# Calculate confusion matrix
+# Compute confusion matrix
   cm = confusion_matrix(model, X_test, y_test)
-  st.write("Confusion Matrix")
-  fig, ax = plt.subplots()
-  disp = ConfusionMatrixDisplay(confusion_matrix=cm)
-  disp.plot(cmap=plt.cm.Blues, ax=ax)
-  st.pyplot(fig)
+  st.title("Confusion Matrix Display")
+# Display confusion matrix
+  st.subheader("Confusion Matrix")
+  disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=model.classes_)
+# Render the confusion matrix plot
+  st.pyplot(disp.plot(cmap="viridis").figure_)
+
   
