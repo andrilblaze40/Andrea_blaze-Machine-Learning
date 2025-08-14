@@ -171,5 +171,5 @@ with st.expander('Fit Model'):
   cv_results = pd.DataFrame(model.cv_results_)
 with st.expander('Cross Validation Results'):
   st.write('**cv_results**')
-  cv_results.head(5)
+  cv_results
 
