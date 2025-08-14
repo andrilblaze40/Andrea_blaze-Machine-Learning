@@ -187,7 +187,7 @@ with st.expander('Accuracy Scores'):
   st.write('**Training Accuracy**')
   acc_train
   st.write('**Test Accuracy**')
-   acc_test
+  acc_test
   
   
 
