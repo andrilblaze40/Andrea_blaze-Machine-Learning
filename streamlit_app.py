@@ -190,7 +190,7 @@ with st.expander('Accuracy Scores'):
   acc_test
 
 # Compute confusion matrix
-  cm = confusion_matrix(X_test, y_test, display_labels=iris.target_names)
+  cm = confusion_matrix(X_test, y_test, labels=None)
   disp = ConfusionMatrixDisplay(confusion_matrix=cm)
   p = st.pyplot(disp)
 with st.expander('Confusion Matrix Display'):
