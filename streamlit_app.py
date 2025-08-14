@@ -188,6 +188,12 @@ with st.expander('Accuracy Scores'):
   acc_train
   st.write('**Test Accuracy**')
   acc_test
-  
+
+# Plot a confusion matrix that shows how your model performed on your test set.
+  ConfusionMatrixDisplay.from_estimator(model, X_test, y_test);
+with st.expander('ConfusionMatrixDisplay'):
+  st.write('**Confusion_Matrix**')
+  ConfusionMatrixDisplay
+
   
 
