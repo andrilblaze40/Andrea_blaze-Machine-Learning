@@ -194,5 +194,7 @@ with st.expander('Accuracy Scores'):
   cm = confusion_matrix(model, X_test, y_test)
   st.write("Confusion Matrix")
   fig, ax = plt.subplots()
+  disp = ConfusionMatrixDisplay(confusion_matrix=cm)
+  disp.plot(cmap=plt.cm.Blues, ax=ax)
   st.pyplot(fig)
   
