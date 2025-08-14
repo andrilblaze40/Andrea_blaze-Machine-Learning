@@ -179,3 +179,15 @@ with st.expander('Cross Validation Results'):
 with st.expander('Best Hyperparameters'):
   st.write('**best_params**')
   best_params
+
+# Test the quality of your model by calculating accuracy scores for the training and test data.
+  acc_train = model.score(X_train_over, y_train_over)
+  acc_test = model.score(X_test, y_test)
+with st.expander('Accuracy Scores'):
+  st.write('**Training Accuracy**')
+  acc_train
+  st.write('**Test Accuracy**')
+   acc_test
+  
+  
+
