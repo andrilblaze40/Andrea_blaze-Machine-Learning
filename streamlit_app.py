@@ -205,7 +205,7 @@ with st.expander('Classification Report'):
 
   df_prediction_proba = pd.DataFrame(prediction_proba)
   df_prediction_proba.columns = ['B', 'M']
-  df_prediction_proba
+  df_prediction_proba[:1]
           
 
          
