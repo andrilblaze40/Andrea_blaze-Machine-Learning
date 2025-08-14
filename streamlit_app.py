@@ -173,3 +173,9 @@ with st.expander('Cross Validation Results'):
   st.write('**cv_results**')
   cv_results
 
+  # Extract the best hyperparameters from your model and assign them to <code>best_params</code>. 
+  best_params = model.best_params_
+  best_params
+with st.expander('Best Hyperparameters'):
+  st.write('**best_params**')
+  best_params
