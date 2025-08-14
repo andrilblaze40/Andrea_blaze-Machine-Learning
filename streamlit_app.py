@@ -190,7 +190,7 @@ with st.expander('Accuracy Scores'):
   acc_test
 
 # Compute confusion matrix
-  cm = confusion_matrix(X_test, y_test, labels=classes)
+  cm = confusion_matrix(X_test, y_test, labels='diagnosis')
   disp = ConfusionMatrixDisplay(confusion_matrix=cm)
   p = st.pyplot(disp)
 with st.expander('Confusion Matrix Display'):
