@@ -198,36 +198,23 @@ with st.expander('Classification Report'):
 # Apply model to make predictions
   prediction = model.predict(X_test)
   prediction
-
-  df_prediction = pd.DataFrame(prediction)
-  df_prediction.columns = ['B', 'M']
-  df_prediction.rename(columns={0: 'B', 1: 'M'})
-                                 
-                  
-  # Display prediction
-st.subheader('Cancer Prediction')
-st.dataframe(df_prediction,
-             column_config={
-               'B': st.column_config.ProgressColumn(
-                 'B',
-                 format='%f',
-                 width='medium',
-                 min_value=0,
-                 max_value=1
-               ),
-               'M': st.column_config.ProgressColumn(
-                 'M',
-                 format='%f',
-                 width='medium',
-                 min_value=0,
-                 max_value=1
-               ),
-             }, hide_index=True)
-
-
-Cancer_diagnosis = np.array(['B', 'M'])
-st.success(str(Cancer_diagnosis[prediction][0]))
+# Using an if statement to display the prediction
+  if prediction == 1:
+     print("The prediction indicates the presence of malignant (cancerous) cells.")
+  elif prediction == 0:
+    print("The prediction indicates the presence of benign (non-cancerous) cells.")
+  else: 
+    print("Invalid prediction result. Please check the model output.")
+    
+        
+     
+         
                                 
+   
+
+  
+
+   
                                 
 
 
