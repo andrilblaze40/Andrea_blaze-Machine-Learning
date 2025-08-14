@@ -200,8 +200,8 @@ with st.expander('Classification Report'):
   prediction_proba = model.predict_proba(input_predictors)
 
   df_prediction_proba = pd.DataFrame(input_predictors)
-  df_prediction_proba.columns = ['M', 'B']
-  df_prediction_proba.rename(columns={0: 'B', 1: 'M'})
+  df_prediction_proba.columns = ['B', 'M']
+  df_prediction_proba.rename(columns={'B': 0, 'M': 1})
                                 
                                 
 
