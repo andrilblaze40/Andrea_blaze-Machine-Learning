@@ -76,18 +76,18 @@ with st.expander('Input features'):
 
 # Data preparation
 # Encode y		
-  #target_mapper = {'B': 0,
-                 #'M': 1,
-                 #}
-  #def target_encode(val):
-  #return target_mapper[val]
+  target_mapper = {'B': 0,
+                 'M': 1,
+                 }
+  def target_encode(val):
+  return target_mapper[val]
 
-  #y = y.apply(target_encode)
+  y = y.apply(target_encode)
   
 
-#with st.expander('Data Preparation'):
-  #st.write('**Encoded y**')
-  #y
+with st.expander('Data Preparation'):
+  st.write('**Encoded y**')
+  y
 
 # Model training
 # Divide your dataset into training and test sets using a randomized split. Your test set should be 20% of your data. Be sure to set `random_state` to `42`.
@@ -189,11 +189,5 @@ with st.expander('Accuracy Scores'):
   st.write('**Test Accuracy**')
   acc_test
 
-# Compute confusion matrix
-  cm = confusion_matrix(X_test, y_test)
-  disp = ConfusionMatrixDisplay(confusion_matrix=cm)
-  p = st.pyplot(disp)
-with st.expander('Confusion Matrix Display'):
-  st.write('**Confusion Matrix**')
-  p
+
   
