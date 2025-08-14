@@ -12,7 +12,7 @@ from sklearn.pipeline import make_pipeline
 import seaborn as sns
 from sklearn.metrics import classification_report
 from imblearn.over_sampling import RandomOverSampler
-
+import numpy as np
 
 
 st.title('🎈ML CANCER DIAGNOSIS APP')
