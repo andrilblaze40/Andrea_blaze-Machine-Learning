@@ -191,11 +191,19 @@ with st.expander('Accuracy Scores'):
 
 # Generate a classification report for your model's performance on the test data and assign it to `class_report`.
   class_report = classification_report(y_test, model.predict(X_test))
-  columns = ['precision','recall', 'f1-score','support']
-  cr = pd.DataFrame(class_report, columns=columns)
 with st.expander('Classification Report'):
   st.write('**Class_Report**')
-  cr
+  class_report
+
+# Apply model to make predictions
+  prediction = model.predict(input_predictors)
+  prediction_proba = model.predict_proba(input_predictors)
+
+  df_prediction_proba = pd.DataFrame(input_predictors)
+  df_prediction_proba.columns = ['M', 'B']
+  df_prediction_proba.rename(columns={0: 'B', 1: 'M'})
+                                
+                                
 
 
 
