@@ -122,6 +122,15 @@ with st.expander(' RandomOverSampler'):
   st.write('**y_train_over**')
   y_train_over
 
+# Create a classifier  that can be trained on `(X_train_over, y_train_over)`.
+  clf = make_pipeline(
+  SimpleImputer(),
+  RandomForestClassifier(random_state=42))
+  clf.fit(X_train_over, y_train_over)
+  with st.expander('RandomForestClassifier'):
+  st.write('**Clf**')
+  clf
+
 # Perform cross-validation with your classifier using the over-sampled training data
   cv_scores = cross_val_score(clf, X_train_over, y_train_over, cv=5, n_jobs=-1)
 with st.expander('Cross Validation'):
