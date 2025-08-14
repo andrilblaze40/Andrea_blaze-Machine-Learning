@@ -143,7 +143,7 @@ with st.expander('Cross Validation'):
     "randomforestclassifier__max_depth": range(10,50,10)
 }
   params
-  with st.expander('Hyperparameter tuning'):
+with st.expander('Hyperparameter tuning'):
   st.write('**params**')
   params
   
