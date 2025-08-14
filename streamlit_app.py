@@ -117,8 +117,10 @@ with st.expander('Split Data'):
   print("X_train_over shape:", X_train_over.shape)
  
 with st.expander(' RandomOverSampler'):
-  st.write('**over_sampler**')
-  X_train_over, y_train_over
+  st.write('**X_train_over**')
+  X_train_over
+  st.write('**y_train_over**')
+  y_train_over
   
   
   
