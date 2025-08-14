@@ -189,8 +189,12 @@ with st.expander('Accuracy Scores'):
   st.write('**Test Accuracy**')
   acc_test
 
-  cfm = ConfusionMatrixDisplay.from_estimator(model, X_test, y_test)
-with st.expander('Confusion Matrix of Model Performance'):
-  st.write('**Confusion_matrix**')
-  st.pyplot(cfm)
+ 
+# Calculate confusion matrix
+  cm = confusion_matrix.from_estimator(model, X_test, y_test)
+  st.write("Confusion Matrix")
+  fig, ax = plt.subplots()
+  disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=iris.target_names)
+  disp.plot(cmap=plt.cm.Blues, ax=ax)
+  st.pyplot(fig)
   
