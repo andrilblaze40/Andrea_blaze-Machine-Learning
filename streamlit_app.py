@@ -189,4 +189,8 @@ with st.expander('Accuracy Scores'):
   st.write('**Test Accuracy**')
   acc_test
 
-  ConfusionMatrixDisplay.from_estimator(model, X_test, y_test);
+  cfm = ConfusionMatrixDisplay.from_estimator(model, X_test, y_test)
+with st.expander('Confusion Matrix of Model Performance'):
+  st.write('**Confusion_matrix**')
+  cfm
+  
