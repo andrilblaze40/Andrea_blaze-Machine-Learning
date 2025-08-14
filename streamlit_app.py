@@ -199,8 +199,15 @@ with st.expander('Classification Report'):
   prediction = model.predict(X_test)
   prediction
 
-        
-     
+# Apply model to make predictions
+  prediction = clf.predict(X_test)
+  prediction_proba = clf.predict_proba(X_test)
+
+  df_prediction_proba = pd.DataFrame(prediction_proba)
+  df_prediction_proba.columns = ['B', 'M']
+  df_prediction_proba
+          
+
          
                                 
    
