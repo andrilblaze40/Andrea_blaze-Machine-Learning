@@ -160,4 +160,11 @@ with st.expander('Hyperparameter tuning'):
 with st.expander('GridSearchCV'):
   st.write('**model**')
   model
+
+# Fit your model to the over-sampled training data. 
+  model.fit(X_train_over, y_train_over)
+with st.expander('Fit Model'):
+  st.write('**Fitted Model**')
+  model.fit
   
+
