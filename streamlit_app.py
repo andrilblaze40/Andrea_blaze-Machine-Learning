@@ -205,7 +205,29 @@ with st.expander('Classification Report'):
   df_prediction_proba.rename(columns={0: 'B', 1: 'M'})
                                  
                   
-  
+  # Display prediction
+st.subheader('Cancer Prediction')
+st.dataframe(df_prediction_proba,
+             column_config={
+               'B': st.column_config.ProgressColumn(
+                 'B',
+                 format='%f',
+                 width='medium',
+                 min_value=0,
+                 max_value=1
+               ),
+               'M': st.column_config.ProgressColumn(
+                 'M',
+                 format='%f',
+                 width='medium',
+                 min_value=0,
+                 max_value=1
+               ),
+             }, hide_index=True)
+
+
+Cancer_diagnosis = np.array(['B', 'M'])
+st.success(str(Cancer_diagnosis[prediction][0]))
                                 
                                 
 
