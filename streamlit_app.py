@@ -226,7 +226,7 @@ st.dataframe(df_prediction,
 
 
 Cancer_diagnosis = np.array(['B', 'M'])
-st.success(str(Cancer_diagnosis[prediction][0, 1]))
+st.success(str(Cancer_diagnosis[prediction][0]))
                                 
                                 
 
