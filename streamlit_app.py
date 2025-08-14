@@ -137,5 +137,13 @@ with st.expander('Cross Validation'):
   st.write('**cv_scores**')
   cv_scores
 
-  
+# Hyperparameters that you want to evaluate for your classifier. 
+  params = {
+    "randomforestclassifier__n_estimators": range(25, 100, 25),
+    "randomforestclassifier__max_depth": range(10,50,10)
+}
+  params
+  with st.expander('Hyperparameter tuning'):
+  st.write('**params**')
+  params
   
