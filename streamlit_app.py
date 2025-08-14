@@ -192,5 +192,5 @@ with st.expander('Accuracy Scores'):
   cfm = ConfusionMatrixDisplay.from_estimator(model, X_test, y_test)
 with st.expander('Confusion Matrix of Model Performance'):
   st.write('**Confusion_matrix**')
-  plot(cfm)
+  st.pyplot(cfm)
   
