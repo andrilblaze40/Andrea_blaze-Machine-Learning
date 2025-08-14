@@ -198,6 +198,7 @@ with st.expander('Classification Report'):
 # Apply model to make predictions
   prediction = model.predict(X_test)
   prediction_proba = model.predict_proba(X_test)
+  prediction_proba
 
   
                                 
