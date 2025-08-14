@@ -14,9 +14,9 @@ from imblearn.over_sampling import RandomOverSampler
 
 
 
-st.title('🎈NWANZE ANDREW'S CANCER DIAGNOSIS APP')
+st.title('🎈ML CANCER DIAGNOSIS APP')
 
-st.info('This is a Machine Learning App')
+st.info('MACHINE LEARNING PIPELINE')
 with st.expander("Data"):
   st.write("**Raw Data**")
   df = pd.read_csv("https://raw.githubusercontent.com/andrilblaze40/Nwanze-Andrew-Machine-learning/refs/heads/master/.streamlit/cleaned_breast_cancer_data.csv")
