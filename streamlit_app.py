@@ -197,17 +197,16 @@ with st.expander('Classification Report'):
 
 # Apply model to make predictions
   prediction = model.predict(X_test)
-  prediction_proba = model.predict_proba(X_test)
-  prediction_proba
+  prediction
 
-  df_prediction_proba = pd.DataFrame(prediction_proba)
-  df_prediction_proba.columns = ['B', 'M']
-  df_prediction_proba.rename(columns={0: 'B', 1: 'M'})
+  df_prediction = pd.DataFrame(prediction)
+  df_prediction.columns = ['B', 'M']
+  df_prediction.rename(columns={0: 'B', 1: 'M'})
                                  
                   
   # Display prediction
 st.subheader('Cancer Prediction')
-st.dataframe(df_prediction_proba,
+st.dataframe(df_prediction,
              column_config={
                'B': st.column_config.ProgressColumn(
                  'B',
