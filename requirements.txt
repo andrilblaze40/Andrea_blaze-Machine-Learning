@@ -1,7 +1,7 @@
 streamlit
 numpy
 pandas
-scikit-learn==0.23.1
+scikit-learn==1.7.1
 matplotlib
 imblearn
 seaborn
