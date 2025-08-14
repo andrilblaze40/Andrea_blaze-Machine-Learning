@@ -190,10 +190,14 @@ with st.expander('Accuracy Scores'):
   acc_test
 
 # Plot a confusion matrix that shows how your model performed on your test set.
-  ConfusionMatrixDisplay class sklearn.metrics._plot.confusion_matrix.ConfusionMatrixDisplay(model, X_test, y_test)
-with st.expander('ConfusionMatrixDisplay'):
-  st.write('**Confusion_Matrix**')
-  ConfusionMatrixDisplay
+# Generate confusion matrix
+  cm = confusion_matrix(model, X_test, y_test)
+  st.title("Confusion Matrix Display of Model Performance on Test set")
+  fig, ax = plt.subplots()
+  disp = ConfusionMatrixDisplay(confusion_matrix=cm)
+  disp.plot(ax=ax, cmap="Blues")
+  st.pyplot(fig)
+
 
   
 
