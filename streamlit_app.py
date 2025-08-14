@@ -127,7 +127,7 @@ with st.expander(' RandomOverSampler'):
   SimpleImputer(),
   RandomForestClassifier(random_state=42))
   clf.fit(X_train_over, y_train_over)
-  with st.expander('RandomForestClassifier'):
+with st.expander('RandomForestClassifier'):
   st.write('**Clf**')
   clf
 
