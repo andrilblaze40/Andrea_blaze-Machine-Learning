@@ -146,4 +146,18 @@ with st.expander('Cross Validation'):
 with st.expander('Hyperparameter tuning'):
   st.write('**params**')
   params
+
+# Create a <code>GridSearchCV</code> named `model` that includes your classifier and hyperparameter grid. Be sure to set `cv` to 5, `n_jobs` to -1, and `verbose` to 1. 
+
+
+  model = GridSearchCV(
+  clf,
+  param_grid=params,
+  cv=5,
+  n_jobs=-1,
+  verbose=1)
+  model
+with st.expander('GridSearchCV'):
+  st.write('**model**')
+  model
   
