@@ -198,14 +198,7 @@ with st.expander('Classification Report'):
 # Apply model to make predictions
   prediction = model.predict(X_test)
   prediction
-# Using an if statement to display the prediction
-  if prediction == 1:
-     print("The prediction indicates the presence of malignant (cancerous) cells.")
-  elif prediction == 0:
-    print("The prediction indicates the presence of benign (non-cancerous) cells.")
-  else: 
-    print("Invalid prediction result. Please check the model output.")
-    
+
         
      
          
