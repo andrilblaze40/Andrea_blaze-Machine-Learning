@@ -191,11 +191,9 @@ with st.expander('Accuracy Scores'):
 
 # Generate a classification report for your model's performance on the test data and assign it to `class_report`.
   class_report = classification_report(y_test, model.predict(X_test))
-  class_report
 with st.expander('Classification Report'):
   st.write('**Class_Report**')
-  class_report
-  
+  st.dataframe(class_report)
 
 
 
