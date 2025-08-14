@@ -10,7 +10,7 @@ from sklearn.metrics import ConfusionMatrixDisplay
 from sklearn.model_selection import GridSearchCV, cross_val_score, train_test_split
 from sklearn.pipeline import make_pipeline
 import seaborn as sns
-
+from imblearn.over_sampling import SMOTE
 
 
 st.title('🎈 CANCER DIAGNOSIS APP')
@@ -109,6 +109,10 @@ with st.expander('Split Data'):
   y_test.shape
 
  
-  
+ 
+
+smote = SMOTE(sampling_strategy='minority', random_state=42)
+X_train_res, y_train_res = smote.fit_resample(X_train, y_train)
+X_train_res, y_train_res                                            
   
   
