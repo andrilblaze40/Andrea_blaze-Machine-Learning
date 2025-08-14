@@ -191,7 +191,7 @@ with st.expander('Accuracy Scores'):
 
  
 # Calculate confusion matrix
-  cm = confusion_matrix.from_estimator(model, X_test, y_test)
+  cm = confusion_matrix(model, X_test, y_test)
   st.write("Confusion Matrix")
   fig, ax = plt.subplots()
   disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=iris.target_names)
