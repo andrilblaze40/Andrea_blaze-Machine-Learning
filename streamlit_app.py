@@ -189,3 +189,4 @@ with st.expander('Accuracy Scores'):
   st.write('**Test Accuracy**')
   acc_test
 
+  ConfusionMatrixDisplay.from_estimator(model, X_test, y_test);
