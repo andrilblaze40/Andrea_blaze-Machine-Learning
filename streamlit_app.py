@@ -14,7 +14,7 @@ from imblearn.over_sampling import RandomOverSampler
 
 
 
-st.title('🎈NWANZE ANDREW'S CANCER DIAGNOSIS APP')
+st.title(🎈'NWANZE ANDREW'S CANCER DIAGNOSIS APP')
 
 st.info('This is a Machine Learning App')
 with st.expander("Data"):
