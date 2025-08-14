@@ -121,6 +121,12 @@ with st.expander(' RandomOverSampler'):
   X_train_over
   st.write('**y_train_over**')
   y_train_over
-  
+
+# Perform cross-validation with your classifier using the over-sampled training data
+  cv_scores = cross_val_score(clf, X_train_over, y_train_over, cv=5, n_jobs=-1)
+with st.expander('Cross Validation'):
+  st.write('**cv_scores**')
+  cv_scores
+
   
   
