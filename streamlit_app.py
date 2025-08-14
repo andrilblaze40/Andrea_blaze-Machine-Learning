@@ -197,7 +197,7 @@ with st.expander('Classification Report'):
 
 # Apply model to make predictions
   prediction = model.predict(X_test)
-  prediction
+  prediction[:1]
 
 # Apply model to make predictions
   prediction = clf.predict(X_test)
