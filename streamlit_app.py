@@ -73,7 +73,8 @@ with st.expander('Input features'):
   input_df
   st.write('**Combined predictors data**')
   input_predictors
-
+  
+  df_input_predictors = pd.get_dummies(input_predictors)
   X = df_input_predictors[1:]
   input_row = df_predictors[:1]
 
