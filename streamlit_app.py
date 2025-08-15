@@ -74,6 +74,8 @@ with st.expander('Input features'):
   st.write('**Combined predictors data**')
   input_predictors
 
+  X = df_input_predictors[1:]
+  input_row = df_predictors[:1]
 
 # Data preparation
 # Encode y		
@@ -195,13 +197,10 @@ with st.expander('Classification Report'):
   st.write('**Class_Report**')
   class_report
 
-# Apply model to make predictions
-  prediction = model.predict(input_predictors)
-  prediction[:1]
 
 # Apply model to make predictions
-  prediction = model.predict(input_predictors)
-  prediction_proba = model.predict_proba(input_predictors)
+  prediction = model.predict(input_row)
+  prediction_proba = model.predict_proba(input_row)
 
   df_prediction_proba = pd.DataFrame(prediction_proba)
   df_prediction_proba.columns = ['B', 'M']
