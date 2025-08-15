@@ -75,7 +75,7 @@ with st.expander('Input features'):
   input_predictors
   
   X = input_df[1:]
-  input_row = df_[:1]
+  input_row = input_df[:1]
 
 # Data preparation
 # Encode y		
