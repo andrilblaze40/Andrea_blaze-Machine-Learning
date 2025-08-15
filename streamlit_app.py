@@ -196,12 +196,12 @@ with st.expander('Classification Report'):
   class_report
 
 # Apply model to make predictions
-  prediction = model.predict(X_test)
+  prediction = model.predict(input_predictors)
   prediction[:1]
 
 # Apply model to make predictions
-  prediction = model.predict(X_test)
-  prediction_proba = model.predict_proba(X_test)
+  prediction = model.predict(input_predictors)
+  prediction_proba = model.predict_proba(input_predictors)
 
   df_prediction_proba = pd.DataFrame(prediction_proba)
   df_prediction_proba.columns = ['B', 'M']
