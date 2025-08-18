@@ -27,7 +27,7 @@ def add_sidebar():
         ('smoothness(worst)','smoothness_worst')
         ('radius(worst)','radius_worst'
         ('smoothness(se)','smoothness_se')
-        ('smoothness(mean)',smoothness_mean')
+        ('smoothness(mean)','smoothness_mean')
 ]
     
     input_dict ={}
