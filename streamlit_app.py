@@ -18,15 +18,15 @@ def add_sidebar():
     df = get_clean_data()
     
     slider_labels = [
-        ('texture (worse)','texture_worse' )
-        ('texture(se)',' texture_se' )
-        ('texture(mean)','texture_mean')
-        ('symmetry(worst)','symmetry_worse') 
-        ('symmetry(se)','symmetry_se')
-        ('symmetry(mean)','symmetry_mean')
-        ('smoothness(worst)','smoothness_worst')
-        ('radius(worst)','radius_worst')
-        ('smoothness(se)','smoothness_se')
+        ('texture (worse)','texture_worse'),
+        ('texture(se)',' texture_se'),
+        ('texture(mean)','texture_mean'),
+        ('symmetry(worst)','symmetry_worse'), 
+        ('symmetry(se)','symmetry_se'),
+        ('symmetry(mean)','symmetry_mean'),
+        ('smoothness(worst)','smoothness_worst'),
+        ('radius(worst)','radius_worst'),
+        ('smoothness(se)','smoothness_se'),
         ('smoothness(mean)','smoothness_mean')]
 
     
