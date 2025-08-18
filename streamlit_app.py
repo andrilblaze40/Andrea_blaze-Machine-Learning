@@ -25,7 +25,7 @@ def add_sidebar():
         ('symmetry(se)','symmetry_se')
         ('symmetry(mean)','symmetry_mean')
         ('smoothness(worst)','smoothness_worst')
-        ('radius(worst)','radius_worst'
+        ('radius(worst)','radius_worst')
         ('smoothness(se)','smoothness_se')
         ('smoothness(mean)','smoothness_mean')]
 
