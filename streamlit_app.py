@@ -19,7 +19,7 @@ def add_sidebar():
     
     slider_labels = [
         ('texture(worst)','texture_worst'),
-        ('texture(se)',' texture_se'),
+        ('texture(se)', 'texture_se'),
         ('texture(mean)','texture_mean'),
         ('symmetry(worst)','symmetry_worse'), 
         ('symmetry(se)','symmetry_se'),
