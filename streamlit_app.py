@@ -18,16 +18,16 @@ def add_sidebar():
     df = get_clean_data()
     
     slider_labels = [
-        ('texture worse', -2.7, 2.7	, -0.0)
-        ('texture_se', -2.6, 2.6, -0.0)
-        ('texture_mean', -6.8	, 6.0, -0.5)
-        ('symmetry_worst', -2.7, -2.7, 0.0) 
-        ('symmetry_se', -6.0, 6.3, -0.0)
-        ('symmetry_mean', -7.2, 6.4, -0.4)
-        ('smoothness_worst', -11.9	, 11.7, -0.1)
-        ('radius_worst', -2.7, 2.7, -0.7)
-        ('smoothness_se', -4.6, 6.6, 1.0)
-        ('smoothness_mean', -13.2, 10.3, -1.5)
+        ('texture (worse)','texture_worse' )
+        ('texture(se)',' texture_se' )
+        ('texture(mean)','texture_mean')
+        ('symmetry(worst)','symmetry_worse') 
+        ('symmetry(se)','symmetry_se')
+        ('symmetry(mean)','symmetry_mean')
+        ('smoothness(worst)','smoothness_worst)
+        ('radius(worst)','radius_worst'
+        ('smoothness(se)','smoothness_se')
+        ('smoothness(mean)',smoothness_mean')
 ]
     
     input_dict ={}
