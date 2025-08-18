@@ -56,7 +56,7 @@ def get_radar_chart(input_data):
   
   input_data = get_scaled_values(input_data)
   
-  features = ['texture worse','texture_se','texture_mean',
+  features = ['texture worse','texture_mean',
               'symmetry_worst','symmetry_se','symmetry_mean',
               'smoothness_worst','radius_worst','smoothness_se',
               'smoothness_mean']
