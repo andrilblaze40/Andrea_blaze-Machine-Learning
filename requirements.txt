@@ -1,9 +1,5 @@
-streamlit
+streamlit>=1.26.0
 pandas
 numpy
-seaborn
-matplotlib
 scikit-learn
-imbalanced-learn
-tensorflow
 plotly
